@@ -206,7 +206,7 @@ public interface ConfigBuilder {
             this.removeUnused = true;
             this.strict = false;
             this.keepOrder = true;
-            this.saveAfterBuild = true;
+            this.saveAfterBuild = !Boolean.getBoolean("config-builder.default.dont-save-after-build");
             this.saveSyncAfterBuild = false;
         }
 
